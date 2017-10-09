@@ -19,9 +19,9 @@ Fortran基本数据类型有：
 * INTEGER，对应int
 * REAL，对应float
 * DOUBLE PRECISION，对应double
-* COMPLEX,复数，可看成包含2个REAL的结构体，第一个为实数，第二个为虚数，因此可用C++中的struct或class表示
-* LOGICAL，对应
-* CHARACTER [*n], n is the optional string length, range from 1 to 32767
+* COMPLEX，复数，可看成包含2个REAL的结构体，第一个为实数，第二个为虚数，因此可用C++中的struct或class表示
+* LOGICAL，对应bool
+* CHARACTER [*n], 字符型变量，n是一个可以选择的值，范围是1到32767
 
 数组：
 * Fortran最高支持7维数组，数据始终保存在一段连续的内存中，并有标准的组织顺序。一维数组的存储和C++是一致的，因此对一维数组，可以直接相互传递。二维或更高维数组Fortran采用的“列优先”存储方式，这和C++“行优先”方式相反。
